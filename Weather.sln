@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{CE65B4F7-7281-4182-ADA4-A72477515EE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{60C7CD14-C287-4D84-AF9C-7088594CB926} = {60C7CD14-C287-4D84-AF9C-7088594CB926}
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED} = {DC9BB191-B95F-4998-B583-2841EB9EC4ED}
+		{349064D7-EC9D-4E71-BA17-4D08E62002DA} = {349064D7-EC9D-4E71-BA17-4D08E62002DA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IInfoProxy", "IInfoProxy\IInfoProxy.csproj", "{69EA519B-D6D6-4459-9F4C-B540E95EDE88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadInformation", "ReadInformation\ReadInformation.csproj", "{DC9BB191-B95F-4998-B583-2841EB9EC4ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88} = {69EA519B-D6D6-4459-9F4C-B540E95EDE88}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRequests", "Request\MyRequests\MyRequests.csproj", "{7214C6A4-78D3-4A71-9C93-8811F58A5993}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88} = {69EA519B-D6D6-4459-9F4C-B540E95EDE88}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenweathermapDLL", "Openweathermap\OpenweathermapDLL\OpenweathermapDLL.csproj", "{60C7CD14-C287-4D84-AF9C-7088594CB926}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED} = {DC9BB191-B95F-4998-B583-2841EB9EC4ED}
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88} = {69EA519B-D6D6-4459-9F4C-B540E95EDE88}
+		{7214C6A4-78D3-4A71-9C93-8811F58A5993} = {7214C6A4-78D3-4A71-9C93-8811F58A5993}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeteoserviceDLL", "Meteoservice\MeteoserviceDLL\MeteoserviceDLL.csproj", "{349064D7-EC9D-4E71-BA17-4D08E62002DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED} = {DC9BB191-B95F-4998-B583-2841EB9EC4ED}
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88} = {69EA519B-D6D6-4459-9F4C-B540E95EDE88}
+		{7214C6A4-78D3-4A71-9C93-8811F58A5993} = {7214C6A4-78D3-4A71-9C93-8811F58A5993}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE65B4F7-7281-4182-ADA4-A72477515EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE65B4F7-7281-4182-ADA4-A72477515EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE65B4F7-7281-4182-ADA4-A72477515EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE65B4F7-7281-4182-ADA4-A72477515EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EA519B-D6D6-4459-9F4C-B540E95EDE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9BB191-B95F-4998-B583-2841EB9EC4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7214C6A4-78D3-4A71-9C93-8811F58A5993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7214C6A4-78D3-4A71-9C93-8811F58A5993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7214C6A4-78D3-4A71-9C93-8811F58A5993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7214C6A4-78D3-4A71-9C93-8811F58A5993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C7CD14-C287-4D84-AF9C-7088594CB926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C7CD14-C287-4D84-AF9C-7088594CB926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C7CD14-C287-4D84-AF9C-7088594CB926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C7CD14-C287-4D84-AF9C-7088594CB926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349064D7-EC9D-4E71-BA17-4D08E62002DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349064D7-EC9D-4E71-BA17-4D08E62002DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349064D7-EC9D-4E71-BA17-4D08E62002DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349064D7-EC9D-4E71-BA17-4D08E62002DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jobc74.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IInfoProxy\\IInfoProxy.csproj
+		SccProjectName1 = IInfoProxy
+		SccLocalPath1 = IInfoProxy
+		SccProjectUniqueName2 = Meteoservice\\MeteoserviceDLL\\MeteoserviceDLL.csproj
+		SccProjectName2 = Meteoservice/MeteoserviceDLL
+		SccLocalPath2 = Meteoservice\\MeteoserviceDLL
+		SccProjectUniqueName3 = Openweathermap\\OpenweathermapDLL\\OpenweathermapDLL.csproj
+		SccProjectName3 = Openweathermap/OpenweathermapDLL
+		SccLocalPath3 = Openweathermap\\OpenweathermapDLL
+		SccProjectUniqueName4 = ReadInformation\\ReadInformation.csproj
+		SccProjectName4 = ReadInformation
+		SccLocalPath4 = ReadInformation
+		SccProjectUniqueName5 = Request\\MyRequests\\MyRequests.csproj
+		SccProjectName5 = Request/MyRequests
+		SccLocalPath5 = Request\\MyRequests
+		SccProjectUniqueName6 = Weather\\Weather.csproj
+		SccProjectName6 = Weather
+		SccLocalPath6 = Weather
+	EndGlobalSection
+EndGlobal
